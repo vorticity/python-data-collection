@@ -74,7 +74,8 @@ Due to the challenge requirement for total flexibility of schema when storing an
 
 Some business logic is missing from this solution: 
 * provide validation of Row entity data against the TableConfig they relate to
-* provide default null/None or default entries for columns of Rows that are missing that data
+* provide null/None or default values for columns of Rows that are missing that data upon retrieval
 * provide structured or unstructured queries for Row entities
+* pagination of result sets
 
 It is unclear to me how the data is intended to be retrieved from the database, but from experience I know that certain NoSQL databases allow indexes to be created on any field within a collection. As there was no mention of data retrieval in this challenge I have chosen not to solve this problem.
