@@ -44,8 +44,10 @@ exclude =
     # alembic migrations
     alembic,
     # terraform configs
-    terraform
-    app/scripts/*
+    terraform,
+    app/scripts/*,
+    # virtualenv
+    .venv
 
 
 # Provide a comma-separate list of glob patterns to include for checks.

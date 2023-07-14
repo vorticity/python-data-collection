@@ -64,3 +64,17 @@ We encourage you to edit the README, or create an additional file, to explain yo
 *Let the Regrow team know, via your point of contact (either a recruiter or our internal people team), when you are ready for us to review.** At this point you will add us as collaborators on your repository so we can view your solution. Do not raise a pull-request against the original repository.
 
 Good luck!
+
+
+## Solution
+
+Authored by Edwin Erdmanis <edwin.erdmanis@gmail.com>
+
+Due to the challenge requirement for total flexibility of schema when storing and presenting entities, I would personally have chosen a NoSQL database over a SQL database to store this data. As a compromise, in my solution I have used JSON fields to describe the expected data schema (TableConfig), the expected data presentation (TableView) and the data for the entities themselves (Row).
+
+Some business logic is missing from this solution: 
+* provide validation of Row entity data against the TableConfig they relate to
+* provide default null/None or default entries for columns of Rows that are missing that data
+* provide structured or unstructured queries for Row entities
+
+It is unclear to me how the data is intended to be retrieved from the database, but from experience I know that certain NoSQL databases allow indexes to be created on any field within a collection. As there was no mention of data retrieval in this challenge I have chosen not to solve this problem.

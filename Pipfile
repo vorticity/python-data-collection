@@ -7,10 +7,17 @@ name = "pypi"
 fastapi = "*"
 sqlmodel = "*"
 uvicorn = "*"
+typing_extensions = ">=4.7.1"
+pydantic = "<2"
 
 [dev-packages]
 black = "*"
 httpx = "*"
+pytest = "*"
+flake8 = "*"
 
 [requires]
 python_version = "3.11"
+
+[pipenv]
+allow_prereleases = true
